@@ -1,8 +1,8 @@
 
 import '../components/loginbutton.dart';
 import '../components/text_fields.dart';
-import '../pages/welcome_page.dart';
 import 'package:flutter/material.dart';
+import './home_page.dart';
 
 class LoginPage extends StatelessWidget {
    LoginPage({super.key});
@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
               LoginButton(
                 onTap: () {
                   Navigator.of(context).pushNamed(
-                    WelcomePage.routeName
+                    HomePage.routeName
                   );
                 },
               ),
