@@ -1,5 +1,6 @@
 
 import 'package:app/pages/home_page.dart';
+import 'package:app/pages/register_page.dart';
 import 'package:app/providers/mchezo_provider.dart';
 import 'package:provider/provider.dart';
 import './pages/welcome_page.dart';

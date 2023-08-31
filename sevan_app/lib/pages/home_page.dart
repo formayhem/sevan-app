@@ -1,4 +1,3 @@
-import 'package:app/models/mchezo.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../widgets/app_drawer.dart';
@@ -25,31 +24,33 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Sevan'),
       ),
+
       drawer: AppDrawer(drawerItems: drawerItems),
       body: Column(
         children: [
           Container(
             color: Colors.green, // Change to green
-            padding: EdgeInsets.all(32.0), // Increase padding
-            child: Text(
+            padding: const EdgeInsets.all(32.0), // Increase padding
+            child: const Text(
               'Promotional Banner',
               style: TextStyle(
                   color: Colors.white, fontSize: 24.0), // Increase font size
             ),
           ),
-          Text(
+          
+          const Text(
             'Michezo Iliyopo',
             style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
           ),
           Expanded(
             child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
               ),
               itemCount: roscas.length,
               itemBuilder: (context, index) {
                 return Container(
-                  margin: EdgeInsets.all(8.0),
+                  margin:const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
                       ClipRRect(
@@ -64,7 +65,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Text(
                         roscas[index].name, // Title from Rosca instance
-                        style: TextStyle(fontSize: 16.0),
+                        style: const TextStyle(fontSize: 16.0),
                       ),
                     ],
                   ),

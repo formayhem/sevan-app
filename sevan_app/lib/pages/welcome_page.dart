@@ -15,14 +15,14 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.white,
     
       body: SafeArea(
         child:  Center(
           child: Column(
             children: [
               //Logo
-            Image.asset('lib/Images/SevanLogo.png',
+            Image.asset('lib/Images/SevanGreen.png',
               height: 500,
             ),
               //login button
