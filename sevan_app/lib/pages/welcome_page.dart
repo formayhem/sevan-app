@@ -1,8 +1,7 @@
-
+import 'package:app/pages/Login_page/login_page.dart';
 import '../components/loginbutton.dart';
 import '../components/registerbutton.dart';
-import '../pages/login_page.dart';
-import '../pages/register_page.dart';
+import 'Register_page/register_page.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {

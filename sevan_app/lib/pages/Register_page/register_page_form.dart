@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../components/text_fields.dart';
-import '../components/registerbutton.dart';
+import '../../components/text_fields.dart';
+import '../../components/registerbutton.dart';
 
 class RegisterForm extends StatelessWidget {
    RegisterForm({super.key});

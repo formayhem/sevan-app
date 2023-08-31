@@ -23,13 +23,16 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Sevan'),
+        backgroundColor: Colors.green,
+        elevation: 0,
       ),
 
       drawer: AppDrawer(drawerItems: drawerItems),
       body: Column(
         children: [
           Container(
-            color: Colors.green, // Change to green
+            width: 400,
+            color: Color.fromARGB(255, 73, 139, 74), // Change to green
             padding: const EdgeInsets.all(32.0), // Increase padding
             child: const Text(
               'Promotional Banner',
