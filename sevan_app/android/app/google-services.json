@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241574243462",
+    "project_id": "sevan-bfc92",
+    "storage_bucket": "sevan-bfc92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241574243462:android:1d3cdb262df9c559a83507",
+        "android_client_info": {
+          "package_name": "com.example.sevan_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241574243462-3ng54j9tkis9doobjohu9psese7ekges.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb_-OHdTceCrBDl36BsFvjCUdYJyr_Ds8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241574243462-3ng54j9tkis9doobjohu9psese7ekges.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
