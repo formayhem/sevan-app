@@ -4,9 +4,11 @@ class AppDrawer extends StatelessWidget {
   const AppDrawer({
     super.key,
     required this.drawerItems,
+    required this.onItemTap,
   });
 
   final List<Map<String, dynamic>> drawerItems;
+  final Function(int) onItemTap;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class AppDrawer extends StatelessWidget {
           const UserAccountsDrawerHeader(
 
             accountName: Text('Aisha Mutaligwa'),
-            accountEmail: Text('derickgerorge@gmail.com'),
+            accountEmail: Text('mutaligwa@gmail.com'),
             currentAccountPicture: CircleAvatar(
               backgroundImage: NetworkImage('https://images.unsplash.com/photo-1509099955921-f0b4ed0c175c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80.png'),
               
@@ -35,7 +37,7 @@ class AppDrawer extends StatelessWidget {
                   leading: Icon(drawerItems[index]['icon']),
                   title: Text(drawerItems[index]['title']),
                   onTap: () {
-                    // Handle item tap
+                    onItemTap(index);
                   },
                 );
               },

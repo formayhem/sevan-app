@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../widgets/app_drawer.dart';
-
 import '../providers/mchezo_provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,7 +26,25 @@ class HomePage extends StatelessWidget {
         elevation: 0,
       ),
 
-      drawer: AppDrawer(drawerItems: drawerItems),
+      drawer: AppDrawer(
+        drawerItems: drawerItems,
+
+        onItemTap: (index) {
+          // Handle item tap here based on the index
+          switch (index) {
+            case 0:
+              // Navigate to the Home screen
+              Navigator.of(context).pushReplacementNamed('/profilePage');
+              break;
+            case 1:
+              // Navigate to the Settings screen
+              Navigator.of(context).pushReplacementNamed('/homePage');
+              break;
+              
+          }
+        }
+      ),
+
       body: Column(
         children: [
           Container(
