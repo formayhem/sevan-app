@@ -49,6 +49,13 @@ class MchezoProvider extends ChangeNotifier {
 
   List<Mchezo> get roscas => [..._roscas];
 
+Mchezo findById(String id) {
+    return _roscas.firstWhere(
+      (prod) => prod.id == id,
+    );
+  }
+
+
   void addRosca(Mchezo mchezo) {
     _roscas.add(mchezo);
     notifyListeners();

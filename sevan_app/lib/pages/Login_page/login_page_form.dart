@@ -43,11 +43,11 @@ class LoginForm extends StatelessWidget {
             ),
             const SizedBox(height:30),
 
-            const Padding(
+             Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child:  Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text('Umesahau Nenosiri?',
                     style: TextStyle(color:  Color.fromARGB(255, 255, 255, 255)),),
                   ],
@@ -62,10 +62,10 @@ class LoginForm extends StatelessWidget {
                   },
                 ),
 
-             const Padding(
+              Padding(
                 padding: EdgeInsets.symmetric(horizontal: 25),
                 child: Row(
-                  children: [
+                  children: const [
                   Expanded(
                     child: Divider(
                       thickness: 0.5,
@@ -76,12 +76,12 @@ class LoginForm extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 5),
+             SizedBox(height: 5),
                 
             //not a member?
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                     Text('Hauna account?',
                       style: TextStyle(color: Colors.white),
                     ),

@@ -1,12 +1,24 @@
+import 'package:app/pages/settings_page.dart';
 import 'package:flutter/material.dart';
+import '../pages/mchezo_page.dart';
+import '../pages/profile_page.dart';
 
 class AppDrawer extends StatelessWidget {
-  const AppDrawer({
+   AppDrawer({
     super.key,
     required this.drawerItems,
   });
 
   final List<Map<String, dynamic>> drawerItems;
+   // Define routes for each item
+  final Map<String, String> itemRoutes = {
+    'Wasifu': ProfilePage.routeName,
+    'Michezo': MchezoPage.routeName,
+    'Item 3': '/item3',
+     'Item 4': '/item2',
+    'Mpangilio': SettingsPage.routeName,
+    // Add more items and their routes as needed
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +47,14 @@ class AppDrawer extends StatelessWidget {
                   leading: Icon(drawerItems[index]['icon']),
                   title: Text(drawerItems[index]['title']),
                   onTap: () {
-                    // Handle item tap
+                    
+ // Handle item tap by pushing the associated route
+                    final title = drawerItems[index]['title'];
+                    final route = itemRoutes[title];
+                    if (route != null) {
+                      Navigator.of(context).pushNamed(route);
+                    }
+                    
                   },
                 );
               },

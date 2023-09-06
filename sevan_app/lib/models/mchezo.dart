@@ -1,8 +1,10 @@
+import 'package:flutter/material.dart';
+
 import '../models/participant.dart';
 import '../models/participant_contribution.dart';
 import '../models/payout.dart';
 
-class Mchezo {
+class Mchezo with ChangeNotifier{
   final String id;
   final String name;
   final List<Participant> participants;
