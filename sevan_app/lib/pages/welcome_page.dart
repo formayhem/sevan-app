@@ -8,8 +8,8 @@ class WelcomePage extends StatelessWidget {
 
   const WelcomePage({super.key});
 
-  static const routeName = '/loginPage';
-  static const route = '/registerPage';
+  // static const routeName = '/loginPage';
+  // static const route = '/registerPage';
 
   @override
   Widget build(BuildContext context) {

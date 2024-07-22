@@ -1,13 +1,16 @@
 class ParticipantContribution {
   final String id;
-  final String participantId;
+  final String title;
   final double amount;
+  final int cardNumber;
   final DateTime contributionDate;
+
 
   ParticipantContribution({
     required this.id,
-    required this.participantId,
+    required this.title,
     required this.amount,
     required this.contributionDate,
+    required this.cardNumber
   });
 }
